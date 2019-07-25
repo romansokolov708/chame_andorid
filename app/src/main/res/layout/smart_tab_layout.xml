@@ -1,0 +1,13 @@
+<com.ogaclejapan.smarttablayout.SmartTabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewPagerTabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_height"
+    android:background="@color/white"
+    app:stl_distributeEvenly="true"
+    app:stl_defaultTabTextColor="@color/dark_gray"
+    app:stl_defaultTabTextHorizontalPadding="10dp"
+    app:stl_indicatorColor="@color/colorPrimary"
+    app:stl_indicatorInterpolation="smart"
+    app:stl_indicatorThickness="2dp"
+    app:stl_underlineThickness="1dp" />

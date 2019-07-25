@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.mukeshsolanki'
+
+android {
+  compileSdkVersion Integer.parseInt(ANDROID_COMPILE_SDK_VERSION)
+
+  defaultConfig {
+    minSdkVersion 14
+    targetSdkVersion Integer.parseInt(ANDROID_TARGET_SDK)
+    versionCode 12
+    versionName "1.2.3"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation 'com.android.support:support-v4:28.0.0'
+  implementation 'com.android.support:design:28.0.0'
+}

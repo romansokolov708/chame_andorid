@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="et_height">@dimen/_40sdp</dimen>
+    <dimen name="btn_height">@dimen/_45sdp</dimen>
+
+    <dimen name="general_item_height">@dimen/_50sdp</dimen>
+    <dimen name="plain_text_size">@dimen/_13sdp</dimen>
+
+    <dimen name="bottom_button_height">@dimen/_55sdp</dimen>
+    <dimen name="edittext_list_item_height">@dimen/_50sdp</dimen>
+    <dimen name="default_edittext_size">@dimen/_14sdp</dimen>
+    <dimen name="list_item_height">@dimen/_50sdp</dimen>
+
+    <dimen name="cb_width">@dimen/_15sdp</dimen>
+    <dimen name="cb_inner_width">@dimen/_9sdp</dimen>
+    <dimen name="between_menu">@dimen/_7sdp</dimen>
+    <dimen name="menu_text_size">@dimen/_13sdp</dimen>
+    <dimen name="menu_item_height">@dimen/_45sdp</dimen>
+    <dimen name="menu_icon_size">@dimen/_20sdp</dimen>
+
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_height_large">72dp</dimen>
+
+    <dimen name="bottom_tab_img_size">@dimen/_13sdp</dimen>
+    <dimen name="bottom_tab_txt_size">@dimen/_8sdp</dimen>
+    <dimen name="bottom_tab_height">@dimen/_40sdp</dimen>
+
+    <dimen name="edit_list_item_margin_top">@dimen/_10sdp</dimen>
+
+    <dimen name="confirm_page_txt_size">@dimen/_13sdp</dimen>
+
+    <dimen name="dialog_btn_height">40dp</dimen>
+    <dimen name="dialog_btn_title_size">15sp</dimen>
+    <dimen name="dialog_content_text_size">17dp</dimen>
+    <dimen name="dialog_title_text_size">20dp</dimen>
+</resources>

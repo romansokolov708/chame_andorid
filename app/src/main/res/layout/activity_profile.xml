@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.main.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/photoIV"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/ic_photo_placeholder"
+                        android:scaleType="fitXY"
+                        app:riv_corner_radius="@dimen/_10sdp"
+                        app:riv_border_width="0dp"
+                        app:riv_border_color="@color/photo_edge_color"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="true" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_camera"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="@dimen/_2sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/_2sdp">
+
+                    <EditText
+                        android:id="@+id/nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/et_height"
+                        android:hint="@string/full_name"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_14sdp"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="@dimen/_1sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/et_height"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/codeET"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:focusable="false"
+                            android:hint="+254"
+                            android:enabled="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"/>
+
+                        <RelativeLayout
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/light_color" />
+
+                        <EditText
+                            android:id="@+id/phoneET"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/phone"
+                            android:enabled="false"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:src="@drawable/ic_phone" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/chama_name_dot"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <TextView
+                        android:id="@+id/chamaNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/et_height"
+                        android:text="Group1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/chama_code_dot"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <TextView
+                        android:id="@+id/chamaCodeTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="XYA3SD"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/chama_role_dot"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <TextView
+                        android:id="@+id/ruleTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Chairperson"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/status_dot"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <TextView
+                        android:id="@+id/statusTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Active"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_14sdp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="@dimen/_2sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="@color/white"
+                        app:mrl_rippleDelayClick="false"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="@dimen/_2sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="@color/white"
+                        app:mrl_rippleDelayClick="false"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <Button
+                            android:id="@+id/saveBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/save"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

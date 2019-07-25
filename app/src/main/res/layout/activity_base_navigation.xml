@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_base_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+        <!--android:background="@color/menu_back_color"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/photoIV"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_photo_placeholder"
+                    app:riv_border_color="@color/photo_edge_color"
+                    app:riv_border_width="0dp"
+                    app:riv_corner_radius="@dimen/_10sdp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/nameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="KIZIAH PHILBERT"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/editTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="Edit Profile"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/homeLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/menu_icon_size"
+                                            android:layout_height="@dimen/menu_icon_size"
+                                            android:src="@drawable/ic_home" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/home_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/transLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_23sdp"
+                                            android:layout_height="@dimen/_23sdp"
+                                            android:src="@drawable/ic_transaction" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/transactions_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/profileLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/menu_icon_size"
+                                            android:layout_height="@dimen/menu_icon_size"
+                                            android:src="@drawable/ic_profile" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/profile_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/groupLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/menu_icon_size"
+                                            android:layout_height="@dimen/menu_icon_size"
+                                            android:src="@drawable/ic_members" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/group_profile_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/passwordLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/menu_icon_size"
+                                            android:layout_height="@dimen/menu_icon_size"
+                                            android:src="@drawable/ic_key" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/change_password_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/contactLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/menu_icon_size"
+                                            android:layout_height="@dimen/menu_icon_size"
+                                            android:src="@drawable/ic_help_white" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/contact_us_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/logoutLL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/menu_item_height"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/menu_icon_size"
+                                            android:layout_height="@dimen/menu_icon_size"
+                                            android:src="@drawable/ic_power" />
+
+                                        <TextView
+                                            android:id="@+id/logoutTV"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/between_menu"
+                                            android:text="@string/logout_u"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/menu_text_size" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="@color/light_color"
+                                        android:visibility="gone"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/versionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp" />
+                <!--android:text="Live Release Version: 1.0 (1)"-->
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

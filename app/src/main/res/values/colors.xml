@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#44adf1</color>
+    <color name="colorPrimaryDark">#3a93cc</color>
+    <color name="colorAccent">#44adf1</color>
+
+
+    <color name="gray_text_color">#aaaaaa</color>
+    <color name="light_color">#cccccc</color>
+    <!--<color name="orange">#fe9b00</color>-->
+
+    <color name="light_orange">#ef8134</color>
+    <color name="light_green">#a7cd3a</color>
+    <color name="light_yellow">#f8cb32</color>
+    <color name="light_gray">#aaaaaa</color>
+
+    <color name="photo_edge_color">#2f79ab</color>
+
+    <color name="loading_back_color">#DDDDDDDD</color>
+    <color name="gray">#888888</color>
+    <color name="dark_gray">#333</color>
+
+    <color name="select_account_part_view_background_color">#191919</color>
+    <color name="select_account_part_view_bottom_background_color">#282828</color>
+    <color name="menu_back_color">#222</color>
+
+    <color name="red">#f00</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="half_red">#ea3f34</color>
+
+    <color name="dark_color">#151515</color>
+    <color name="semi_dark_color">#222</color>
+
+    <color name="dialog_back_color">#252525</color>
+    <color name="half_green">#55aa55</color>
+</resources>

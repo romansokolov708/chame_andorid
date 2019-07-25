@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.main.contribute.fragment.ContributeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_money_for"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="@dimen/_2sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="0dp">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.2"
+                            app:mrl_rippleColor="@color/white"
+                            app:mrl_rippleDelayClick="false"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true">
+
+                            <Button
+                                android:id="@+id/fundBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/et_height"
+                                android:layout_gravity="center"
+                                android:background="@color/light_orange"
+                                android:text="@string/emergency_fund"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="@dimen/_2sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="0dp">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.2"
+                            app:mrl_rippleColor="@color/white"
+                            app:mrl_rippleDelayClick="false"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true">
+
+                            <Button
+                                android:id="@+id/saveBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/et_height"
+                                android:layout_gravity="center"
+                                android:background="@color/light_green"
+                                android:text="@string/save_3x"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="@dimen/_2sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="0dp">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.2"
+                            app:mrl_rippleColor="@color/white"
+                            app:mrl_rippleDelayClick="false"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true">
+
+                            <Button
+                                android:id="@+id/merryBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/et_height"
+                                android:layout_gravity="center"
+                                android:background="@color/light_yellow"
+                                android:text="@string/merry"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <!--<TextView
+                    android:id="@+id/rateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interest_rate"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <TextView
+                    android:id="@+id/feeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/processing_fee"
+                    android:textSize="@dimen/_14sdp"/>-->
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="@dimen/_2sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="@color/white"
+                        app:mrl_rippleDelayClick="false"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
